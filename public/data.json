@@ -1,0 +1,102 @@
+[
+    {
+      "id": "1",
+      "college_image": "https://i.ibb.co/DRzTbkv/college1.jpg",
+      "college_name": "University of Science and Technology",
+      "admission_dates": "2023-08-15",
+      "events": ["Orientation Day", "Science Expo", "Career Fair"],
+      "research_history": "Founded in 1950, the university has a rich history of groundbreaking research in various fields.",
+      "admission_process": "Prospective students can apply for sports scholarships during the regular admission process.",
+      "events_details": {
+        "Orientation Day": "An event to welcome new students and provide them with essential information about the college.",
+        "Science Expo": "A platform for students and faculty to showcase their research and scientific projects.",
+        "Career Fair": "A networking event where companies and organizations interact with students for potential job opportunities."
+      },
+      "sports_categories": ["Soccer","Basketball","Swimming","Volleyball"]
+    },
+  
+  
+    {
+      "id": "2",
+      "college_image": "https://i.ibb.co/87ndq7m/college2.jpg",
+      "college_name": "Art and Design Institute",
+      "admission_dates": "2023-09-01",
+      "events": ["Portfolio Exhibition", "Art Symposium", "Fashion Show"],
+      "research_history": "The institute has a strong emphasis on artistic research, pushing boundaries in creative expression.",
+      "admission_process": "While not primarily a sports-focused institute, students can participate in recreational sports clubs.",
+      "events_details": {
+        "Portfolio Exhibition": "Students showcase their creative portfolios to industry professionals and potential employers.",
+        "Art Symposium": "An annual event where artists and scholars gather to discuss current trends and issues in the art world.",
+        "Fashion Show": "A glamorous event where students display their original fashion designs on the runway."
+      },
+      "sports_categories": ["Yoga", "Dance", "Table Tennis", "Badminton"]
+    },
+    
+  
+    {
+      "id": "3",
+      "college_image": "https://i.ibb.co/qdTRKYj/college3.jpg",
+      "college_name": "Science and Technology University",
+      "admission_dates": "2023-11-15",
+      "events": ["Tech Expo", "Innovation Conference", "Robotics Competition"],
+      "research_history": "The university is at the forefront of scientific research, with collaborations with industry leaders.",
+      "admission_process": "The admission process involves a combination of academic performance, entrance exams, and interviews with faculty members.",
+      "events_details": {
+        "Tech Expo": "Students and researchers display their latest technological innovations and projects to the public.",
+        "Innovation Conference": "A gathering of industry experts and academics discussing advancements and challenges in various scientific fields.",
+        "Robotics Competition": "Students compete in building and programming robots to perform specific tasks and challenges."
+      },
+      "sports_categories": ["Football", "Swimming", "Chess", "Athletics"]
+    },
+  
+  
+    {
+      "id": "4",
+      "college_image": "https://i.ibb.co/Wn67hxR/college4.jpg",
+      "college_name": "Business and Finance Academy",
+      "admission_dates": "2023-10-01",
+      "events": ["Entrepreneurship", "Finance Seminar", "Marketing Workshop"],
+      "research_history": "The academy promotes research in business and finance, analyzing market trends and developing.",
+      "admission_process": "Prospective students go through a rigorous selection process, including interviews, aptitude tests, and group discussions.",
+      "events_details": {
+        "Entrepreneurship Summit": "Aspiring entrepreneurs pitch their business ideas to investors and receive valuable feedback and potential funding.",
+        "Finance Seminar": "Experts from the financial industry share insights on market analysis, investment, and risk management.",
+        "Marketing Workshop": "Students learn about the latest marketing techniques and participate in hands-on projects to develop marketing campaigns."
+      },
+      "sports_categories": ["Basketball", "Volleyball", "Golf", "Cricket"]
+    },
+  
+  
+    {
+      "id": "5",
+      "college_image": "https://i.ibb.co/1R1JDyn/college5.jpg",
+      "college_name": "Music Conservatory",
+      "admission_dates": "2023-09-20",
+      "events": ["Concert Series", "Master Classes", "Composition Competition"],
+      "research_history": "The conservatory fosters musical exploration and academic study, encouraging students to delve into various genres and styles.",
+      "admission_process": "Aspiring musicians undergo auditions where they showcase their skills in their chosen instrument or vocal performance.",
+      "events_details": {
+        "Concert Series": "Regular concerts featuring students, faculty, and renowned guest musicians, showcasing a diverse range of musical performances.",
+        "Master Classes": "Internationally acclaimed musicians conduct specialized classes, providing valuable insights and guidance to talented students.",
+        "Composition Competition": "Students submit their original musical compositions for a chance to have their work performed and recognized."
+      },
+      "sports_categories": ["Music Ensemble", "Yoga", "Pilates", "Meditation"]
+    },
+  
+    {
+      "id": "6",
+      "college_image": "https://i.ibb.co/BGZm18D/college6.jpg",
+      "college_name": "Science and Engineering Institute",
+      "admission_dates": "2023-09-20",
+      "events": ["Science Fair", "Engineering Expo", "Tech Hackathon"],
+      "research_history": "The institute focuses on cutting-edge scientific research and engineering innovations, collaborating with leading industries.",
+      "admission_process": "Prospective students are evaluated based on their academic performance, entrance exam results, and interviews with faculty members.",
+      "events_details": {
+        "Science Fair": "Students present their scientific experiments and findings, competing for recognition and awards.",
+        "Engineering Expo": "An exhibition showcasing engineering projects and prototypes developed by students, attracting industry professionals.",
+        "Tech Hackathon": "An intense competition where students work in teams to build innovative tech solutions to real-world challenges."
+      },
+      "sports_categories": ["Basketball", "Football", "Swimming", "Athletics"]
+    }
+  
+  ]
