@@ -2,7 +2,7 @@ import React from 'react';
 import PopularCollege from '../PopularCollege/PopularCollege';
 import Banner from '../Banner/Banner';
 import Gallery from '../Gallery/Gallery';
-import AllTestimonial from '../AllTestimonial/AllTestimonial';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
@@ -10,7 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <PopularCollege></PopularCollege>
-            <AllTestimonial></AllTestimonial>
+            <Reviews></Reviews>
         </div>
     );
 };

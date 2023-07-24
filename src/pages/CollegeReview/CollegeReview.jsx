@@ -17,7 +17,9 @@ const CollegeReview = ({ item }) => {
         const reviewInfo = {
             textarea,
             number,
-            candidateName
+            candidateName,
+            img: user.photoURL,
+            collegeName
         }
         console.log(reviewInfo);
         fetch('https://admission-college-server-studentabusayeed.vercel.app/review', {
