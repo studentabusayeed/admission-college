@@ -9,6 +9,8 @@ import SignUp from "../SignUp/SignUp";
 import Login from "../Login/Login";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import AdmissionForm from "../pages/AdmissionForm/AdmissionForm";
+import PrivateRoute from "./PrivateRoute";
+import Profile from "../pages/shared/Profile/Profile";
 
 export const router = createBrowserRouter([
     {
@@ -30,11 +32,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/myCollege',
-                element: <MyCollege></MyCollege>
+                element: <PrivateRoute><MyCollege></MyCollege></PrivateRoute>
             },
             {
                 path: '/details/:id',
-                element: <CollegeDetails></CollegeDetails>,
+                element: <PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>,
                 loader: () => fetch('/data.json/')
             },
             {
@@ -49,6 +51,10 @@ export const router = createBrowserRouter([
                 path: "/admission/:collegeName",
                 element: <AdmissionForm></AdmissionForm>,
             },
+            {
+                path: "/profile",
+                element: <Profile></Profile>
+            }
         ]
     }
 ]);

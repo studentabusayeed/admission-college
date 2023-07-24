@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import CollegeReview from '../CollegeReview/CollegeReview';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const MyCollege = () => {
 
     const [users, setUsers] = useState([]);
+    const {user} = useContext(AuthContext);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/student`)
+        fetch(`https://admission-college-server-studentabusayeed.vercel.app/student?email=${user?.email}`)
             .then((res) => res.json())
             .then((result) => {
                 setUsers(result);

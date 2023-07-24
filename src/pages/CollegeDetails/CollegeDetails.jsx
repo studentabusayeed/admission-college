@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './CollegeDetails.css';
 
-const CollegeDetails = ({item}) => {
+const CollegeDetails = () => {
     const products = useLoaderData();
     const {id} = useParams();
     const [college, setCollege] = useState([]);

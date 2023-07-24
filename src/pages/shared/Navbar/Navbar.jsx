@@ -16,29 +16,34 @@ const Navbar = () => {
 
 
     const Menu = <>
-        <li className='text-white'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/">Home</Link></li>
-        <li className='text-white'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/colleges">Colleges</Link></li>
-        <li className='text-white'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/admission">Admission</Link></li>
-        <li className='text-white'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/myCollege">My College</Link></li>
+        <li className='text-white'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2 mt-1' to="/">Home</Link></li>
+        <li className='text-white mt-1'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/colleges">Colleges</Link></li>
+        <li className='text-white mt-1'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/admission">Admission</Link></li>
+        <li className='text-white mt-1'><Link className='font-semibold bg-slate-500 py-3 px-3 hover:text-white mr-2' to="/myCollege">My College</Link></li>
 
         {user?.email ? <>
-            <img className={user.photoURL ? 'img-menu' : ''} title={user?.displayName} src={user?.photoURL
-            } alt="" />
-            <Link onClick={handleLogout} className='font-bold bg-yellow-700 px-5 rounded-lg flex items-center text-white mx-2 log-btn'>Log out</Link>
+            <Link to="/profile" className='flex mt-1'>
+                <img className={user.photoURL ? 'img-menu' : ''} title={user?.displayName} src={user?.photoURL
+                } alt="" />
+                <span className="text-white hover:text-gray-300 flex items-center font-semibold mx-2">
+                    {user?.displayName}
+                </span>
+            </Link>
+            <Link onClick={handleLogout} className='font-bold bg-success px-5 rounded-lg flex items-center text-white mx-2 log-btn mt-1'>Log out</Link>
         </> : <>
-            <Link className='font-bold bg-yellow-700 px-5 rounded-lg flex items-center text-white mx-2 log-btn' to="/login">Login</Link>
-            <Link className='font-bold bg-yellow-700 px-5 rounded-lg flex items-center text-white reg-btn mx-2' to="/signup">Sign Up</Link>
+            <Link className='font-bold bg-success px-5 rounded-lg flex items-center text-white mx-2 log-btn mt-1' to="/login">Login</Link>
+            <Link className='font-bold bg-success px-5 rounded-lg flex items-center text-white reg-btn mx-2 mt-1' to="/signup">Sign Up</Link>
         </>}
     </>
 
     return (
-        <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl bg-success h-20 pt-4">
+        <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl bg-success h-22 pt-2">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-success rounded-box w-52">
                         {Menu}
                     </ul>
                 </div>

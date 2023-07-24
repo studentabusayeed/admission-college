@@ -14,10 +14,11 @@ const CollegeList = () => {
   return (
     <div className="flex justify-center items-center w-[40%] mx-auto h-screen">
       <div className="my-4 ">
-        <h2 className="text-2xl font-bold mb-4">College Names</h2>
+        <h2 className="text-2xl font-bold">College Names</h2>
+        <div className="divider mb-4"></div>
         <ul>
           {colleges.map((college, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 font-semibold">
               {index + 1} ...
               <Link
                 to={`/admission/${college}`}

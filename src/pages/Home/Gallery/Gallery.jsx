@@ -13,12 +13,12 @@ const Gallery = () => {
     .then(res => res.json())
     .then(data => setUsers(data));
     return (
-        <div>
-            <h2 className='text-2xl font-bold text-center mt-8 text-cyan-600'>College Graduate's Group Pictures</h2>
+        <div className='bg-slate-100 py-6'>
+            <h2 className='text-2xl font-bold text-center text-cyan-600'>College Graduate's Group Pictures</h2>
             <div className='flex justify-center'>
                 <div className="divider w-1/2"></div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center my-5 bg-slate-200 p-20 rounded'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center bg-slate-100 p-20 rounded'>
                 {
                     users.map((user) => <Galleryimg
                         key={user.id}

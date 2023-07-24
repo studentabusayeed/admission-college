@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const CollegeItem = ({ item }) => {
     return (
         <div className="card card-compact w-80 bg-base-400 shadow-xl class-img">
-            {/* <img className="w-full" src={item.college_image} alt={item.college_name} /> */}
             <figure><img src={item.college_image} alt={item.college_name} /></figure>
             <div className="px-6 py-4">
                 <div className="font-semibold text-xl mb-2">College Name:{item.college_name}</div>
